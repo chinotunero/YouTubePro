@@ -13,4 +13,4 @@ if exist "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" (
     exit /b 1
 )
 
-"%JAVA_HOME%\bin\java.exe" %DEFAULT_JVM_OPTS% -classpath %CLASSPATH% org.gradle.wrapper.GradleWrapperMain %*
+"%JAVA_HOME%\bin\java.exe" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% -Dorg.gradle.appname=%APP_BASE_NAME% -classpath %CLASSPATH% org.gradle.wrapper.GradleWrapperMain %*
